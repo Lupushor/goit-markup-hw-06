@@ -29,7 +29,9 @@
           >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a href="./index.html" class="link current-page current">Студія</a>
+              <a href="./index.html" class="link current-page current"
+                >Студія</a
+              >
             </li>
             <li class="nav-item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
@@ -64,7 +66,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!--  Description -->
@@ -136,10 +140,14 @@
                 />
                 <p class="direction-text-item">десктопні додатки</p>
               </div>
-            </li>            
+            </li>
             <li class="direction-item">
               <div class="direction-text-wrap">
-                <img src="./images/what_make_2.jpg" alt="Test app" width="370" />
+                <img
+                  src="./images/what_make_2.jpg"
+                  alt="Test app"
+                  width="370"
+                />
                 <p class="direction-text-item">мобільні додатки</p>
               </div>
             </li>
@@ -152,7 +160,7 @@
                 />
                 <p class="direction-text-item">дизайнерські рішення</p>
               </div>
-            </li>            
+            </li>
           </ul>
         </div>
       </section>
@@ -443,6 +451,28 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form>
+          <label for="user-name">Ім'я</label>
+          <input type="text" name="user-name" id="user-name" />
+
+          <label for="user-tel">Телефон</label>
+          <input type="tel" name="user-tel" id="user-tel" />
+
+          <label for="user-email">Пошта</label>
+          <input type="email" name="user-email" id="user-email" />
+
+          <label for="user-feedback">Коментар</label>
+          <textarea name="feedback" id="user-feedback" rows="10"></textarea>
+
+          <input type="checkbox" name="user-rules" value="rules" id="rules" />
+          <label for="rules"
+            >Погоджуюся з розсилкою та приймаю
+            <a href="#">Умови договору</a></label
+          >
+
+          <button type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
