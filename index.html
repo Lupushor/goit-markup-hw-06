@@ -452,18 +452,61 @@
           </svg>
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form>
-          <label for="user-name">Ім'я</label>
-          <input type="text" name="user-name" id="user-name" />
-
-          <label for="user-tel">Телефон</label>
-          <input type="tel" name="user-tel" id="user-tel" />
-
-          <label for="user-email">Пошта</label>
-          <input type="email" name="user-email" id="user-email" />
-
-          <label for="user-feedback">Коментар</label>
-          <textarea name="feedback" id="user-feedback" rows="10"></textarea>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="input-label">Ім'я</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="input-label">Телефон</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="input-label">Пошта</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-feedback" class="input-label">Коментар</label>
+            <textarea
+              name="feedback"
+              id="user-feedback"
+              placeholder="Введіть текст"
+              class="modal-feedback"
+            ></textarea>
+          </div>
 
           <input type="checkbox" name="user-rules" value="rules" id="rules" />
           <label for="rules"
