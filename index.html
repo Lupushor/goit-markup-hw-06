@@ -74,7 +74,7 @@
       <!--  Description -->
       <section class="description">
         <div class="container">
-          <h2 class="description-h2">Section Description</h2>
+          <h2 class="visually-hidden">Section Description</h2>
           <ul class="description-list list">
             <li class="description-item antenna">
               <div class="description-icon-size">
@@ -517,14 +517,21 @@
               class="modal-feedback"
             ></textarea>
           </div>
-          <div class="modal-field">
-          <input type="checkbox" name="user-rules" value="rules" id="rules" />
-          <label for="rules"
-            >Погоджуюся з розсилкою та приймаю
-            <a href="#">Умови договору</a></label
-          >
+          <div class="modal-field rules-btn">
+            <input
+              type="checkbox"
+              name="user-rules"
+              value="rules"
+              id="rules"
+              class="user-rules visually-hidden"
+            />
+            <label for="rules" class="user-rules-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#" class="user-rules-link"> Умови договору</a>
+            </label>
+            <button type="submit" class="user-rules-btn">Відправити</button>
           </div>
-          <button type="submit">Відправити</button>
+          <div class=""></div>
         </form>
       </div>
     </div>
