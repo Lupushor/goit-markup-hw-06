@@ -989,7 +989,6 @@ img {
   border-radius: 4px;
   border-color: transparent;
   padding: 10px 52px;
-  margin-top: 30px;
 
   font-family: inherit;
   font-weight: 700;
@@ -1009,4 +1008,8 @@ img {
 .user-rules-btn:hover,
 .user-rules-btn:focus {
   background-color: var(--button-hov-foc-color);
+}
+
+.rules-btn {
+  margin-top: 30px;
 }
